@@ -4,7 +4,7 @@ html {
 
 body {
   background: linear-gradient(50deg, rgb(212, 128, 245), rgb(53, 102, 192));
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Mukta', sans-serif;
   font-size: 14px;
   line-height: 1.5rem;
   min-height: 100%;
@@ -13,14 +13,20 @@ body {
   background-attachment: fixed;
 }
 
+header {
+  padding: 20px;
+}
+
 .home {
-  padding: 50px;
+  padding: 10px;
   display: block;
   background: transparent;
   border: 0px;
-  font-family: 'Press Start 2P';
+  font-family: 'Press Start 2P', cursive;
   font-size: 60px;
   margin-bottom: 50px;
+  border: solid black 0.75px;
+  border-radius: 50%
 }
 
 .home a {
@@ -33,11 +39,15 @@ body {
   color: rgb(212, 128, 245);
 }
 
-
 h1 {
+  font-family: 'Press Start 2P', cursive;
   margin: auto;
   text-align: center;
   padding-bottom: 20px;
+  text-indent: -20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 h2 {
