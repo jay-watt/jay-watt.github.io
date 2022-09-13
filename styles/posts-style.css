@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(50deg, rgb(212, 128, 245), rgb(53, 102, 192));
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 50px;
+}
+
+.home {
+  display: block;
+  background: transparent;
+  border: 0px;
+  font-family: 'Press Start 2P';
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+
+.home a {
+  text-decoration: none;
+  color: #000;
+}
+
+.home a:hover {
+  text-decoration: none;
+  color: rgb(212, 128, 245);
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+}
+
+div {
+  width: 600px;
+  margin: auto;
+}
+
+#image1 {
+  width: 594px;
+  border: 3px solid rgb(53, 102, 192);
+}
+
+#image2 {
+  margin-top: 0px;
+  width: 594px;
+  border: 3px solid rgb(53, 102, 192);
+}
+
+table {
+  margin: auto;
+}
+
+#text-table {
+  border-collapse: collapse;
+  width: 600px;
+  height: 300px;
+}
+
+#text-table th, td {
+  border: 3px solid rgb(53, 102, 192);
+}
+
+#text-table td {
+  text-indent: 20px;
+}
+
+#image-table td {
+  border: 0px;
+  text-align: center;
+  vertical-align: top;
+  column-gap: 100px;
+  font-weight: bold;
+  font-size: 16px;
+
+}
