@@ -48,7 +48,7 @@ body {
   grid-area: nav;
   padding-top: 50px;
   font-size: 12px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', Arial;
   text-align: center;
   justify-content: center;
 }
