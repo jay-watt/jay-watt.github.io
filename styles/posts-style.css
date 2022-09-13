@@ -1,17 +1,26 @@
+html {
+  height: 100%;
+}
+
 body {
   background: linear-gradient(50deg, rgb(212, 128, 245), rgb(53, 102, 192));
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  padding: 50px;
+  line-height: 1.5rem;
+  min-height: 100%;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .home {
+  padding: 50px;
   display: block;
   background: transparent;
   border: 0px;
   font-family: 'Press Start 2P';
   font-size: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .home a {
@@ -24,9 +33,16 @@ body {
   color: rgb(212, 128, 245);
 }
 
+
 h1 {
   margin: auto;
   text-align: center;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 div {
@@ -34,35 +50,34 @@ div {
   margin: auto;
 }
 
+main div {
+  padding: 20px;
+}
+
+/* TECHNICAL POST */
 #image1 {
   width: 594px;
   border: 3px solid rgb(53, 102, 192);
 }
-
 #image2 {
   margin-top: 0px;
   width: 594px;
   border: 3px solid rgb(53, 102, 192);
 }
-
 table {
   margin: auto;
 }
-
 #text-table {
   border-collapse: collapse;
   width: 600px;
   height: 300px;
 }
-
 #text-table th, td {
   border: 3px solid rgb(53, 102, 192);
 }
-
 #text-table td {
   text-indent: 20px;
 }
-
 #image-table td {
   border: 0px;
   text-align: center;
