@@ -1,0 +1,140 @@
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(50deg, rgb(212, 128, 245), rgb(100, 198, 255));
+}
+
+.box {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.about {
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.name {
+  grid-area: name;
+  font-size: 60px;
+  font-family: 'Press Start 2P', cursive;
+  margin: auto;
+  background-color: transparent;
+  text-align: center;
+  color: #ffffff;
+}
+
+.image {
+  grid-area: image;
+  margin: auto;
+}
+#image {
+  width: 30vw;
+  max-width: 228px;
+}
+
+.nav {
+  grid-area: nav;
+  padding-top: 50px;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  padding-right: 5%;
+}
+
+td a {
+  text-decoration: none;
+  color: black;
+  white-space: pre;
+  text-align: center;
+}
+
+td a:hover {
+  text-decoration: none;
+  color: rgb(28, 89, 180);
+}
+
+.container {
+  background-color: transparent;
+  display: grid;
+  grid-gap: auto;
+  grid-template-areas: "about" "name" "image" "nav";
+  padding: 0px;
+  flex: 1 0 auto;
+}
+
+/* 320x480px mobile view */
+@media only screen and (max-width: 600px) {
+  table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  tbody {
+    display: flex;
+    flex-direction: row;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    padding-bottom: 50px;
+  }
+
+  @media only screen and (max-height: 650px) {
+    .container {
+      padding: 10px;
+      grid-gap: 0px 0px;
+    }
+    .name {
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+    .nav {
+      padding-top: 20px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+/* 768x1024px tablet view */
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: auto auto;
+    grid-template-areas: "about about" "name image" "nav  nav";
+  }
+}
+
+/* desktop view */
+@media only screen and (min-width: 769px) {
+  body {
+    background: linear-gradient(50deg, rgb(91, 153, 245), rgb(100, 198, 255), rgb(96, 255, 81));
+  }
+  .name {
+    font-size: 150px;
+    color: rgb(96, 255, 81);
+    text-shadow: 0 0 100px rgb(8, 44, 99), 0 0 50px rgb(0, 56, 141);
+  }
+  td a:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
