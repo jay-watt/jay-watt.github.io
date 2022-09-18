@@ -1,80 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../../styles/posts-style.css" rel="stylesheet" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
-        <title>inline vs inline-block</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../../styles/posts-style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>inline vs inline-block</title>
+  </head>
 
-    <header>
-      <button class="home">
-        <a href="../index.html">J</a>
-      </button>
-    </header>
+  <header>
+    <button class="home">
+      <a href="../../index.html">J</a>
+    </button>
+  </header>
 
-    <body>
-      <div>
-          <h1>inline vs inline-block<br><br></h1>
-      </div>
-      <div>
-        <p>The CSS display property specifies the box type used for HTML elements. Elements with inline and inline-block display are both able to be placed within lines with adjacent content as they do not have default line-breaks placed afterwards. This is the property that sets them apart from block display elements which cannot be placed beside other content and take up the full line. <br><br><br></p>
-        
-        <table id="text-table">
-          <tr>
-            <th>Property</th>
-            <th>display: inline</th>
-            <th>display: inline-block</th>
-          </tr>
-          <tr>
-            <td>Ability to set width and height</td>
-            <td>No</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Width</td>
-            <td>Minimum required</td>
-            <td>Set width</td>
-          </tr>
-          <tr>
-            <td>Height</td>
-            <td>Minimum required</td>
-            <td>Set height</td>
-          </tr>
-          <tr>
-            <td>Left/right margins/padding</td>
-            <td>Will not override</td>
-            <td>Will override</td>
-          </tr>
-          <tr>
-            <td>Top/bottom margins/padding</td>
-            <td>Will override</td>
-            <td>Will not override</td>
-          </tr>
-          <tr>
-            <td>Box breaking</td>
-            <td>Yes</td>
-            <td>No</td>
-          </tr>
-        </table>
-      </div>
-   
-      <table id="image-table">
+  <body>
+    <div>
+      <h1>inline vs inline-block</h1>
+    </div>
+    <div>
+      <p>
+        The CSS display property specifies the box type used for HTML elements.
+        Elements with inline and inline-block display are both able to be placed
+        within lines with adjacent content as they do not have default
+        line-breaks placed afterwards. This is the property that sets them apart
+        from block display elements which cannot be placed beside other content
+        and take up the full line.
+      </p>
+      <table id="text-table">
         <tr>
-          <td><br><br><br>Code<br><br></td>
+          <th>Property</th>
+          <th>display: inline</th>
+          <th>display: inline-block</th>
         </tr>
         <tr>
-          <td><img id="image1" src="code-screenshot.png" alt="screenshot of example code"></td>
+          <td>Ability to set width and height</td>
+          <td>No</td>
+          <td>Yes</td>
         </tr>
         <tr>
-          <td><br><br>Web page<br><br></td>
+          <td>Width</td>
+          <td>Minimum required</td>
+          <td>Set width</td>
         </tr>
         <tr>
-          <td><img id="image1" src="preview-screenshot.png" alt="screenshot of example web page"></td>
+          <td>Height</td>
+          <td>Minimum required</td>
+          <td>Set height</td>
+        </tr>
+        <tr>
+          <td>Left/right margins/padding</td>
+          <td>Will not override</td>
+          <td>Will override</td>
+        </tr>
+        <tr>
+          <td>Top/bottom margins/padding</td>
+          <td>Will override</td>
+          <td>Will not override</td>
+        </tr>
+        <tr>
+          <td>Box breaking</td>
+          <td>Yes</td>
+          <td>No</td>
         </tr>
       </table>
-    </body>
+    </div>
+
+    <table id="image-table">
+      <tr>
+        <td><br /><br />Code<br /></td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="image1"
+            src="code-screenshot.png"
+            alt="screenshot of example code"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><br />Web page<br /></td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="image1"
+            src="preview-screenshot.png"
+            alt="screenshot of example web page"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
