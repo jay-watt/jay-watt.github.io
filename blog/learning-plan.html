@@ -1,82 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../styles/posts-style.css" rel="stylesheet" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Press+Start+2P&display=swap"
-                                                                                  rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Learning Plan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+  </script>
+  <script src="https://kit.fontawesome.com/360fd52777.js"
+    crossorigin="anonymous"></script>
 </head>
 
-<header>
-  <button class="home">
-    <a href="../index.html">J</a>
-  </button>
-</header>
-
 <body>
-  <main>
-    <h1>Learning Plan</h1>
-    <div>
-      <h2>What is your long term goal or career pathway?</h2>
-      <p>I would like to work freelance on projects that I am invested in. At the moment, there are two main areas I
-        would like to aim towards working in. One is sustainable waste management. Some apps/websites that are lacking
-        in this sector focus on goals like public education, creating connections between people with waste and
-        community members with recycling solutions, waste worker job assistance, etc. The other area would be Pasifika
-        knowledge access, specifically Fijian language and culture. There is a lack of well-designed apps and websites I
-        have found to research my culture. While the most important way is engaging with the elders I have around me, I
-        feel strongly about there being other routes to connection, particularly for those in the diaspora.</p>
-    </div>
-    <div>
-      <h2>A description of your strengths and limitations when it comes to learning.</h2>
-      <p>My major strength in learning is creative problem solving. Many of the skills I have and cherish today were
-        learnt outside of formal learning environments and I recognise that valuable knowledge can often be found in
-        unexpected places. I have also always enjoyed working and collaborating in DIY environments, and pride myself on
-        being resourceful. My biggest limitation is getting stuck and struggling to move on. It has been helpful to get
-        into the habit of using a pomodoro break timer but I will need to keep it up long term in order to retain
-        meaningful changes. Another difficulty I have is balancing my learning with my other obligations. My priority,
-        whether I am studying or working, is always my family. They are consistently supportive and understanding of my
-        other commitments, but I often struggle to acknowledge my limited capacity when I have demanding workloads.</p>
-    </div>
-    <div>
-      <h2>What skills (non-technical core/human skills) would you like to see developed in yourself while at Dev
-        Academy?</h2>
-      <p>I recognise the importance of reflecting throughout project work and learning. I would like to practise this
-        more throughout my time at DA so that I can identify the areas that are useful for me to reflect on. By the end
-        of the course, I want to have a clear set of questions that are productive for me to ask myself while learning.
-      </p>
-    </div>
-    <div>
-      <h2>A commitment to how you will manage your workload in this programme.</h2>
-      <p>I will take initiative in making sure I am resting and maintaining a healthy study-life balance. This will
-        allow me to communicate more effectively, as well as increasing my patience when working with others. Managing
-        my stress through adequate rest and therapy helps me to be a better listener which is, in my opinion, the most
-        important part of collaborating. I will also push myself to reach out for help among the team at DA which will
-        alleviate isolation and helplessness.</p>
-    </div>
-    <div>
-      <h2>A commitment as to how and where you will seek help in a timely way</h2>
-      <p>I will make sure that I have contact details and times available for the appropriate DA staff throughout this
-        course. Consistent therapy is something I will endeavor to keep up, as well as attending a support group I have
-        been a part of long-term. Keeping my flatmates at home in the loop will also widen my network of available
-        support when I need it.</p>
-    </div>
-    <div>
-      <h2>A description of what you expect from the Facilitation team.</h2>
-      <p>I expect to be listened to without assumptions being made, or expectations put on me to explain and educate
-        beyond my capacity.</p>
-    </div>
-    <div>
-      <h2>Any scheduling information such as block-out times when you are committed to other things.</h2>
-      <p>I have a fortnightly hourly appointment that I am hoping to shift to lunchtime for bootcamp. If not, I will fit
-        it in over the weekend. Otherwise, I have no set obligations that will interfere with the set bootcamp schedule.
-      </p>
-    </div>
-  </main>
+  <section class="hero is-fullheight">
 
+    <div class="hero-head">
+      <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+          <figure class="navbar-item image">
+            <a href="../index.html" class="navbar-item" id="icons">
+              <i class="fa-regular fa-star fa-3x fa-beat"></i>
+              <i class="fa-regular fa-star fa-3x fa-beat"
+                style="--fa-animation-duration: 0.5s;"></i>
+              <i class="fa-regular fa-star fa-3x fa-beat"
+                style="--fa-animation-duration: 2s;"></i>
+            </a>
+          </figure>
+        </div>
+        <div class="column right">
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>TECH</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content has-text-white">
+                <a href="problem-solving.html" class="dropdown-item">
+                  Problem Solving
+                </a>
+                <a href="javascript-dom.html" class="dropdown-item">
+                  JavaScript Basics
+                </a>
+                <a href="html-css.html" class="dropdown-item">
+                  CSS Concepts
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>CORE</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a href="neuroplasticity.html" class="dropdown-item">
+                  Mindset
+                </a>
+                <a href="emotional-intelligence.html" class="dropdown-item">
+                  Emotional Intelligence
+                </a>
+                <a href="learning-plan.html" class="dropdown-item">
+                  Learning Plan
+                </a>
+                <a href="identity-values.html" class="dropdown-item">
+                  Identity & Values
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered single-spaced"
+        style="top: 300px;">
+        <h1 id="main-heading" class="title is-1">LEARNING PLAN</h1>
+      </div>
+      <div class="paragraph content">
+        <div class="columns">
+          <div class="column is-one-quarter">
+
+          </div>
+          <div id="content" class="column">
+            <div class="card">
+              <h2 class="sub-heading">What is your long term goal or career
+                pathway?</h2>
+              <p>I would like to work freelance on projects that I am invested
+                in. At the moment, there are two main areas I
+                would like to aim towards working in. One is sustainable waste
+                management. Some apps/websites that are lacking
+                in this sector focus on goals like public education, creating
+                connections between people with waste and
+                community members with recycling solutions, waste worker job
+                assistance, etc. The other area would be Pasifika
+                knowledge access, specifically Fijian language and culture.
+                There is a lack of well-designed apps and websites I
+                have found to research my culture. While the most important way
+                is engaging with the elders I have around me, I
+                feel strongly about there being other routes to connection,
+                particularly for those in the diaspora.</p>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">A description of your strengths and
+                limitations when it comes to learning.</h2>
+              <p>
+                My major strength in learning is creative problem solving. Many
+                of the skills I have and cherish today were
+                learnt outside of formal learning environments and I recognise
+                that valuable knowledge can often be found in
+                unexpected places. I have also always enjoyed working and
+                collaborating in DIY environments, and pride myself on
+                being resourceful. My biggest limitation is getting stuck and
+                struggling to move on. It has been helpful to get
+                into the habit of using a pomodoro break timer but I will need
+                to keep it up long term in order to retain
+                meaningful changes. Another difficulty I have is balancing my
+                learning with my other obligations. My priority,
+                whether I am studying or working, is always my family. They are
+                consistently supportive and understanding of my
+                other commitments, but I often struggle to acknowledge my
+                limited capacity when I have demanding workloads
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">What skills (non-technical core/human
+                skills) would you like to see developed in yourself while at Dev
+                Academy?</h2>
+              <p>
+                I recognise the importance of reflecting throughout project work
+                and learning. I would like to practise this
+                more throughout my time at DA so that I can identify the areas
+                that are useful for me to reflect on. By the end
+                of the course, I want to have a clear set of questions that are
+                productive for me to ask myself while learning.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">A commitment to how you will manage your
+                workload in this programme.</h2>
+              <p>
+                I will take initiative in making sure I am resting and
+                maintaining a healthy study-life balance. This will
+                allow me to communicate more effectively, as well as increasing
+                my patience when working with others. Managing
+                my stress through adequate rest and therapy helps me to be a
+                better listener which is, in my opinion, the most
+                important part of collaborating. I will also push myself to
+                reach out for help among the team at DA which will
+                alleviate isolation and helplessness.
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">A commitment as to how and where you will
+                seek help in a timely way</h2>
+              <p>
+                I will make sure that I have contact details and times available
+                for the appropriate DA staff throughout this
+                course. Consistent therapy is something I will endeavor to keep
+                up, as well as attending a support group I have
+                been a part of long-term. Keeping my flatmates at home in the
+                loop will also widen my network of available
+                support when I need it.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">A description of what you expect from the
+                Facilitation team.</h2>
+              <p>
+                I expect to be listened to without assumptions being made, or
+                expectations put on me to explain and educate
+                beyond my capacity.</p>
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">Any scheduling information such as
+                block-out times when you are committed to other things.</h2>
+              <p>I have a fortnightly hourly appointment that I am hoping to
+                shift to lunchtime for bootcamp. If not, I will fit
+                it in over the weekend. Otherwise, I have no set obligations
+                that will interfere with the set bootcamp schedule.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </section>
 </body>
+
+</html>

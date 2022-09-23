@@ -1,55 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/style.css" rel="stylesheet" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Press+Start+2P&display=swap"
-                                                                                  rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jay's blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+  </script>
+  <script src="https://kit.fontawesome.com/360fd52777.js"
+    crossorigin="anonymous"></script>
+
+  <style>
+    /* BACKGROUND AND RESPONSIVENESS */
+    .hero {
+      background: black url(images/night.jpg) center / cover;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        background: black url(images/night-mobile.jpg) center / cover;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <main>
-    <div class="container">
-      <div class="box about">welcome to my blog, i'm</div>
-      <div class="box name">jay</div>
-      <div class="box image">
-        <img id="image" src="blue.png" alt="pixel art blue bubble burst">
-      </div>
-      <div class="box nav">
-        <table>
-          <tr>
-            <td class="dropdown" id="tech">tech posts
-              <div class="dropdown-content">
-                <a href="blog/html-css.html">HTML & CSS</a>
-                <a href="blog/javascript-dom.html">JavaScript & DOM</a>
-                <a href="blog/problem-solving.html">Problem Solving</a>
+  <section class="hero is-fullheight">
+
+    <div class="hero-head">
+      <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+          <figure class="navbar-item image">
+            <a href="index.html" class="navbar-item" id="icons">
+              <i class="fa-solid fa-cloud fa-3x fa-beat"
+                style="--fa-animation-duration: 3s;"></i>
+              <i class="fa-solid fa-cloud fa-3x fa-beat"
+                style="--fa-animation-duration: 2.5s;"></i>
+              <i class="fa-solid fa-cloud fa-3x fa-beat"
+                style="--fa-animation-duration: 2s;"></i>
+            </a>
+          </figure>
+        </div>
+        <div class="column right">
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>TECH</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content has-text-white">
+                <a href="blog/problem-solving.html" class="dropdown-item">
+                  Problem Solving
+                </a>
+                <a href="blog/javascript-dom.html" class="dropdown-item">
+                  JavaScript Basics
+                </a>
+                <a href="blog/html-css.html" class="dropdown-item">
+                  CSS Concepts
+                </a>
               </div>
-            </td>
-            <td class="dropdown" id="core">core posts
+            </div>
+          </div>
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>CORE</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
               <div class="dropdown-content">
-                <a href="blog/identity-values.html">Identity, Values<br>&
-                  Strengths</a>
-                <a href="blog/learning-plan.html">Learning Plan</a>
-                <a
-                  href="blog/emotional-intelligence.html">Emotional<br>Intelligence</a>
-                <a href="blog/neuroplasticity.html">Mindset</a>
-
+                <a href="blog/neuroplasticity.html" class="dropdown-item">
+                  Mindset
+                </a>
+                <a href="blog/emotional-intelligence.html"
+                  class="dropdown-item">
+                  Emotional Intelligence
+                </a>
+                <a href="blog/learning-plan.html" class="dropdown-item">
+                  Learning Plan
+                </a>
+                <a href="blog/identity-values.html" class="dropdown-item">
+                  Identity & Values
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered single-spaced"
+        style="top: 250px;">
+        <h1 id="name" class="title is-1 has-text-black">J A Y</h1>
+      </div>
+    </header>
 
-      <!-- <div class="footer">
-      <a href="mailto:jaywatt8000@gmail.com">jaywatt8000@gmail.com</a>
-    </div> -->
-  </main>
+  </section>
 </body>
 
 </html>

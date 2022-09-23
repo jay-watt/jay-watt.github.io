@@ -1,96 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../styles/posts-style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Press+Start+2P&display=swap"
-                                                                                  rel="stylesheet" />
-  <title>inline vs inline-block</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Concepts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+  </script>
+  <script src="https://kit.fontawesome.com/360fd52777.js"
+    crossorigin="anonymous"></script>
 </head>
 
-<header>
-  <button class="home">
-    <a href="../index.html">J</a>
-  </button>
-</header>
-
 <body>
-  <div>
-    <h1>inline vs inline-block</h1>
-  </div>
-  <div>
-    <h2>Overview</h2>
-    <p>
-      The CSS display property specifies the box type used for HTML elements.
-      Elements with inline and inline-block display are both able to be placed
-      within lines with adjacent content as they do not have default
-      line-breaks placed afterwards. This is the property that sets them apart
-      from block display elements which cannot be placed beside other content
-      and take up the full line.
-    </p>
-    <table id="text-table">
-      <tr>
-        <th>Property</th>
-        <th>display: inline</th>
-        <th>display: inline-block</th>
-      </tr>
-      <tr>
-        <td>Ability to set width and height</td>
-        <td>No</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td>Width</td>
-        <td>Minimum required</td>
-        <td>Set width</td>
-      </tr>
-      <tr>
-        <td>Height</td>
-        <td>Minimum required</td>
-        <td>Set height</td>
-      </tr>
-      <tr>
-        <td>Left/right margins/padding</td>
-        <td>Will not override</td>
-        <td>Will override</td>
-      </tr>
-      <tr>
-        <td>Top/bottom margins/padding</td>
-        <td>Will override</td>
-        <td>Will not override</td>
-      </tr>
-      <tr>
-        <td>Box breaking</td>
-        <td>Yes</td>
-        <td>No</td>
-      </tr>
-    </table>
-  </div>
+  <section class="hero is-fullheight">
 
-  <table id="image-table">
-    <tr>
-      <td><br /><br />Code<br /></td>
-    </tr>
-    <tr>
-      <td>
-        <img id="image1" src="code-screenshot.png"
-          alt="screenshot of example code" />
-      </td>
-    </tr>
-    <tr>
-      <td><br />Web page<br /></td>
-    </tr>
-    <tr>
-      <td>
-        <img id="image1" src="preview-screenshot.png"
-          alt="screenshot of example web page" />
-      </td>
-    </tr>
-  </table>
+    <div class="hero-head">
+      <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+          <figure class="navbar-item image">
+            <a href="../index.html" class="navbar-item" id="icons">
+              <i class="fa-regular fa-star fa-3x fa-beat"></i>
+              <i class="fa-regular fa-star fa-3x fa-beat"
+                style="--fa-animation-duration: 0.5s;"></i>
+              <i class="fa-regular fa-star fa-3x fa-beat"
+                style="--fa-animation-duration: 2s;"></i>
+            </a>
+          </figure>
+        </div>
+        <div class="column right">
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>TECH</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content has-text-white">
+                <a href="problem-solving.html" class="dropdown-item">
+                  Problem Solving
+                </a>
+                <a href="javascript-dom.html" class="dropdown-item">
+                  JavaScript Basics
+                </a>
+                <a href="html-css.html" class="dropdown-item">
+                  CSS Concepts
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>CORE</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a href="neuroplasticity.html" class="dropdown-item">
+                  Mindset
+                </a>
+                <a href="emotional-intelligence.html" class="dropdown-item">
+                  Emotional Intelligence
+                </a>
+                <a href="learning-plan.html" class="dropdown-item">
+                  Learning Plan
+                </a>
+                <a href="identity-values.html" class="dropdown-item">
+                  Identity & Values
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered single-spaced"
+        style="top: 300px;">
+        <h1 id="main-heading" class="title is-1">INLINE & INLINE-BLOCK</h1>
+      </div>
+      <div class="paragraph content">
+        <div class="columns">
+          <div class="column is-one-quarter">
+
+          </div>
+          <div id="content" class="column">
+            <div class="card">
+              <h2 class="sub-heading">Overview</h2>
+              <p>
+                The CSS display property specifies the box type used for HTML
+                elements.
+                Elements with inline and inline-block display are both able to
+                be placed
+                within lines with adjacent content as they do not have default
+                line-breaks placed afterwards. This is the property that sets
+                them apart
+                from block display elements which cannot be placed beside other
+                content
+                and take up the full line.
+              </p>
+            </div>
+            <div class="card">
+              <table id="text-table">
+                <tr>
+                  <th>Property</th>
+                  <th>display: inline</th>
+                  <th>display: inline-block</th>
+                </tr>
+                <tr>
+                  <td>Ability to set width and height</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Width</td>
+                  <td>Minimum required</td>
+                  <td>Set width</td>
+                </tr>
+                <tr>
+                  <td>Height</td>
+                  <td>Minimum required</td>
+                  <td>Set height</td>
+                </tr>
+                <tr>
+                  <td>Left/right margins/padding</td>
+                  <td>Will not override</td>
+                  <td>Will override</td>
+                </tr>
+                <tr>
+                  <td>Top/bottom margins/padding</td>
+                  <td>Will override</td>
+                  <td>Will not override</td>
+                </tr>
+                <tr>
+                  <td>Box breaking</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                </tr>
+              </table>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">Example</h2>
+              <table id="image-table">
+                <tr>
+                  <td>
+                    <img id="image1" src="../images/code-screenshot.png"
+                      alt="screenshot of example code" />
+                    <br><br>
+                    <img id="image1" src="../images/preview-screenshot.png"
+                      alt="screenshot of example web page" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </section>
 </body>
 
 </html>

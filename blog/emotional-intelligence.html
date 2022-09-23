@@ -1,64 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../styles/posts-style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Press+Start+2P&display=swap"
-                                                                                  rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Emotional Intelligence</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+  </script>
+  <script src="https://kit.fontawesome.com/360fd52777.js"
+    crossorigin="anonymous"></script>
 </head>
 
-<header>
-  <button class="home">
-    <a href="../index.html">J</a>
-  </button>
-</header>
-
 <body>
-  <h1>Emotional Intelligence</h1>
-  <div>
-    <h2>What is emotional intelligence?</h2>
-    <p> EQ and IQ are both measures of certain abilities. However, while the abilities they focus on work together, they
-      are very different.
-    <ul>EQ:
-      <li>identifying emotions</li>
-      <li>evaluating how others feel</li>
-      <li>controlling one's own emotions</li>
-      <li>perceiving how others feel</li>
-      <li>using emotions to facilitate social communication</li>
-      <li>relating to others</li>
-    </ul>
-    </p>
-  </div>
-  <div>
-    <h2>
-      How is it different to IQ?
-    </h2>
-    <ul>IQ:
-      <li>visual and spatial processing</li>
-      <li>kKnowledge of the world</li>
-      <li>fluid reasoning</li>
-      <li>working memory and short-term memory</li>
-      <li>quantitative reasoning</li>
-    </ul>
-    <p></p>
-  </div>
-  <div>
-    <h2>
-      Why is it important?
-    </h2>
-    <p>
-      IQ and EQ are both elements in a complex array of influences that play roles in overall success, as well as
-      health, wellness, and happiness. Emotional abilities (e.g. empathy, initiative and self-confidence) will be the
-      main factor in determine whether someone is able
-      to work well in a team. EQ will also influence the choices that consumers make when confronted with buying
-      decisions i.e. sales success.
-    </p>
-  </div>
+  <section class="hero is-fullheight">
+
+    <div class="hero-head">
+      <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+          <figure class="navbar-item image">
+            <a href="../index.html" class="navbar-item" id="icons">
+              <i class="fa-regular fa-star fa-3x fa-beat"></i>
+              <i class="fa-regular fa-star fa-3x fa-beat"
+                style="--fa-animation-duration: 0.5s;"></i>
+              <i class="fa-regular fa-star fa-3x fa-beat"
+                style="--fa-animation-duration: 2s;"></i>
+            </a>
+          </figure>
+        </div>
+        <div class="column right">
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>TECH</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content has-text-white">
+                <a href="problem-solving.html" class="dropdown-item">
+                  Problem Solving
+                </a>
+                <a href="javascript-dom.html" class="dropdown-item">
+                  JavaScript Basics
+                </a>
+                <a href="html-css.html" class="dropdown-item">
+                  CSS Concepts
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown is-hoverable is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span>CORE</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a href="neuroplasticity.html" class="dropdown-item">
+                  Mindset
+                </a>
+                <a href="emotional-intelligence.html" class="dropdown-item">
+                  Emotional Intelligence
+                </a>
+                <a href="learning-plan.html" class="dropdown-item">
+                  Learning Plan
+                </a>
+                <a href="identity-values.html" class="dropdown-item">
+                  Identity & Values
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered single-spaced"
+        style="top: 300px;">
+        <h1 id="main-heading" class="title is-1">EMOTIONAL INTELLIGENCE</h1>
+      </div>
+      <div class="paragraph content">
+        <div class="columns">
+          <div class="column is-one-quarter">
+
+          </div>
+          <div id="content" class="column">
+            <div class="card">
+              <h2 class="sub-heading">What is emotional intelligence?</h2>
+              <p> EQ and IQ are both measures of certain abilities. However,
+                while the abilities they focus on work together, they are very
+                different.<br>Main focusses of EQ:
+                <ul>
+                  <li>identifying emotions</li>
+                  <li>evaluating how others feel</li>
+                  <li>controlling one's own emotions</li>
+                  <li>perceiving how others feel</li>
+                  <li>using emotions to facilitate social communication</li>
+                  <li>relating to others</li>
+                </ul>
+              </p>
+              <p>Main focusses of IQ:</p>
+              <ul>
+                <li>visual and spatial processing</li>
+                <li>kKnowledge of the world</li>
+                <li>fluid reasoning</li>
+                <li>working memory and short-term memory</li>
+                <li>quantitative reasoning</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="sub-heading">Why is EQ important?</h2>
+              <p>
+                IQ and EQ are both elements in a complex array of influences
+                that
+                play roles in overall success, as well as
+                health, wellness, and happiness. Emotional abilities (e.g.
+                empathy,
+                initiative and self-confidence) will be the
+                main factor in determine whether someone is able
+                to work well in a team. EQ will also influence the choices
+                that
+                consumers make when confronted with buying
+                decisions i.e. sales success.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </section>
 </body>
 
 </html>
