@@ -1,4 +1,4 @@
-# Progress Tracker Website for Dev Academy
+# Progress Tracker Blog for Dev Academy
 
 ## Overview
 
