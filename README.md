@@ -6,4 +6,4 @@ This website is designed to help track and visualise my progress throughout my j
 
 ## How to Access
 
-The website is hosted at **jay-watt.github.io**
+The website is hosted at **https://jay-watt.github.io/**
