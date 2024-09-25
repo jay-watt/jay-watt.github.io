@@ -1,5 +1,3 @@
-# jay-watt.github.io
-
 # Progress Tracker Website for Dev Academy
 
 ## Overview
